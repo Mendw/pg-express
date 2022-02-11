@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Plot test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+</head>
+<body>
+    <h1>Graficos</h1>
+    <main>
+        <div class="inputs">
+            <div class="table-select-container">
+                <label for="table-select"></label>
+                <select id="table-select">
+                    <option disabled selected value="">Seleccionar tabla</option>
+                </select>
+            </div>
+            
+            <div class="chart-options hidden">
+                <label for="x-col">Columna X</label>
+                <label for="y-col">Columna Y</label>
+                <label for="c-col">Clase (opcional)</label>
+                
+                <select id="x-col" class="col-select">
+                    <option value="" disabled selected>Seleccione</option>
+                </select>
+                <select id="y-col" class="col-select">
+                    <option value="" disabled selected>Seleccione</option>
+                </select>
+
+                <select id="c-col" class="col-select">
+                    <option value="" selected>Ninguna</option>
+                </select>
+            </div>
+
+            <button id="apply">Aplicar</button>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart" width="750" height="600"></canvas>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-trendline"></script>
+    <script src='index.js'></script>
+</body>
+</html>
